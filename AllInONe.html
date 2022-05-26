@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Zabka</title>
+  <meta charset="utf-8" />
+  <style>
+    #canvas {
+      border-style: solid;
+      border-width: 5px;
+      margin-left:auto;
+      margin-right:auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    <canvas id="canvas" tabindex="1" height="550" width="500">No Canvas :(</canvas>
+  </p>
+  <script src="utils/utils.js"></script>
+  <script src="objects/objects.js"></script>
+  <script src="gameobjects.js"></script>
+  <script src="resourceManager.js"></script>
+  <script src="states.js"></script>
+  <script src="main.js"></script>
+  <script src="levely.js"></script>
+  
+  <script type="text/javascript">       // tu sa vola nekonecna slucka 
+    const game = new Game();
+    game.start().then(() => console.log('done')).catch(err => console.error(err));
+  </script>
+</body>
+
+</html>
